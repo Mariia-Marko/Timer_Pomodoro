@@ -1,0 +1,7 @@
+@mixin flexiblePlacement($axis-x, $axis-y, $axis-inversion, $wrap) {
+    display: flex;
+    justify-content: $axis-x;
+    align-items: $axis-y;
+    flex-direction: $axis-inversion;
+    flex-wrap: $wrap;
+}
