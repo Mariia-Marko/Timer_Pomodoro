@@ -12,9 +12,9 @@
     <div class="wrapper">
         <h1 class="title">pomodoro</h1>
         <ul class="list">
-            <li><button class="btn">pomodoro</button></li>
-            <li><button class="btn">short break</button></li>
-            <li><button class="btn">long break</button></li>
+            <li><button class="btn" id="button">pomodoro</button></li>
+            <li><button class="btn" id="butto">short break</button></li>
+            <li><button class="btn" id="butt">long break</button></li>
         </ul>
         <div class="timer">
             <ul class="timer-inner">
@@ -22,7 +22,25 @@
                 <li><span class="timer-state">PAUSE</span></li>
             </ul>
         </div>
-        <button class="settings"></button>
+        <button class="settings" id="myBtn"></button>
+        <div class="modal" id="myModal">
+            <div class="modal-head">
+                <p class="modal-title">Settings</p>
+                <span class="close">&times;</span>                    
+            </div>
+            <ul class="modal-list">
+                <li class="modal-item"></li>
+                <li class="modal-item">
+                    <p class="item-title">FONT</p>
+                    <ul class="choice-color">
+                        <li >Aa</li>
+                        <li>Aa</li>
+                        <li>Aa</li>
+                    </ul>
+                </li>
+                <li class="modal-item"></li>
+            </ul>
+        </div>
     </div>
     <script src="./source/script.js"></script>
 </body>

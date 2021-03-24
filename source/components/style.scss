@@ -29,18 +29,15 @@
     width: 120px;
     height: 48px;
     color: #D7E0FF;
-    opacity: 0.4;
+    font-weight: bold;
     font-size: 14px;
     border-radius: 26.5px;
     border: none;
-    background: #161932;
+    background-color: #161932;
 }
 
 .btn:hover {
-    background: #F87070;
-    color: #1E213F;
-    opacity: 1;
-    font-weight: bold;
+    color: white;
 }
 
 .timer {
@@ -85,4 +82,54 @@
     opacity: 0.6;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin: 0 auto;
+    height: 464px;
+    width: 540px;
+    border-radius: 25px;
+    overflow: auto;
+    background-color: white;
+    padding: 34px 0 59px;
+}
+
+.modal-head {
+    @include flexiblePlacement(space-between, none, none, none);
+    height: 3.7em;
+    border-bottom: 1px solid #E3E1E1;
+    padding: 0 39px;
+}
+
+.modal-title {
+    font-family: Kumbh Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #161932;
+}
+
+.close {
+    color: #D8D8D8;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.modal-list {
+    padding: 28px 39px 70px;
+    @include flexiblePlacement(none, none, none, none);
+
+}
+
+.item-title {
+    font-family: Kumbh Sans;
+    line-height: 13px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 14px;
+    color: #161932;
+}
 @import './config/media';
