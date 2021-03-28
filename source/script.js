@@ -11,6 +11,7 @@ button.onclick = function () {
 
 let modal = document.getElementById('myModal');
 let btn = document.getElementById('myBtn');
+let modalBtn = document.getElementById('modal-aplly');
 let span = document.getElementsByClassName('close')[0];
 
 btn.onclick = function() {
